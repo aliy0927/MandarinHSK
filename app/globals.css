@@ -1,0 +1,132 @@
+:root {
+  --Color_001: rgba(98, 39, 33, 1);
+  --Color_002: #a54136;
+  --Color_003: #fcecd2;
+  --Color_004: #6f614c;
+  --Color_005: rgba(136, 45, 37, 1);
+  --Color_006: rgba(214, 200, 178, 1);
+  --quit_margin: 12.96px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /* border-radius: 30px; */
+
+  /* z-index: 0; */
+}
+/* 禁止图片拖拽 */
+img {
+  -webkit-user-drag: none; /* 针对Webkit内核浏览器（如Chrome和Safari） */
+  -khtml-user-drag: none; /* 对Konqueror浏览器的支持 */
+  -moz-user-drag: none; /* 对Firefox浏览器的支持 */
+  -ms-user-drag: none; /* 对旧版IE/Edge浏览器的支持 */
+}
+body {
+  border-radius: 30px;
+  background: var(--Color_003, #fcecd2);
+  /* width: 1440px; */
+  /* height: 2486px; */
+  overflow-x: hidden;
+}
+.Clickable {
+  cursor: pointer;
+}
+.Clickable:hover {
+  scale: 1.1;
+}
+.mask {
+  position: fixed;
+  z-index: 99999999;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .halfBorder {
+  border: 1px solid var(--Color_002);
+  width: 280px !important;
+  height: 72px !important;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+}
+
+.halfBorder > * {
+  transform: scale(2, 2);
+} */
+.halfBorder {
+  position: relative;
+}
+.halfBorder:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 1px var(--Color_002); /* 使用 inset 阴影模拟边框 */
+  border-radius: 6px;
+  pointer-events: none;
+}
+.halfBorder-noTop {
+  position: relative;
+}
+.halfBorder-noTop:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 1px 0 0 var(--Color_003),
+    inset 0 0px 1px 0 var(--Color_002);
+  border-radius: 6px;
+  pointer-events: none;
+}
+.stroke {
+  --strokeWidth: 378px;
+  stroke-dasharray: var(--strokeWidth);
+  stroke-dashoffset: var(--strokeWidth);
+  animation: stroke 2s forwards;
+}
+@keyframes stroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.hover1 {
+  /*通过伪元素实现hover*/
+  position: relative;
+}
+.hover1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* 初始时透明，不影响原始背景色 */
+  mix-blend-mode: color-burn;
+  background-color: black; /* 使用黑色或其他深色进行混合 */
+  pointer-events: none;
+  /* 在:hover状态下增加不透明度以加深背景 */
+  transition: opacity 0.3s ease-in-out;
+}
+.hover1:hover::before {
+  opacity: 0.1;
+}
+/* 单独为#a54136修改 */
+.hover2:hover {
+  background-color: var(--Color_005) !important;
+}
+.hover3:hover {
+  background-color: var(--Color_006) !important;
+}
+input[type='checkbox'] {
+  display: none;
+}

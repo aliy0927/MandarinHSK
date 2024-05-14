@@ -1,0 +1,195 @@
+.headercontainer {
+  --bgc: rgba(0, 0, 0, 0);
+  --shadow: none;
+  z-index: 999;
+  width: 100%;
+  position: fixed;
+  background-color: var(--bgc);
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease-out;
+  box-shadow: var(--shadow);
+}
+.header {
+  width: 77.8%;
+  margin: 0.6944vw auto;
+  // margin-top: 2.6389vw;
+
+  height: 3.4722vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  .intro {
+    display: flex;
+    align-items: end;
+    .mtitle {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      color: var(--Color_002, #a54136);
+      font-family: 'DIN';
+      font-size: 1.1111vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    .stitle {
+      color: var(--Color_002, #a54136);
+      font-family: PingFang SC;
+      font-size: 0.6267vw;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      opacity: 0.6;
+    }
+  }
+  ul {
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-flex;
+    padding: 0.4167vw 1.8056vw;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9722vw;
+    border-radius: 0.4167vw;
+    background: var(--Color_002, #a54136);
+    svg {
+      width: 0.4167vw;
+      height: 0.4167vw;
+      fill: rgba(255, 255, 255, 0.7);
+    }
+    li {
+      list-style: none;
+      padding: 0.2778vw;
+      height: 100%;
+      border-radius: 0.3472vw;
+      color: var(--Color_003, #fcecd2);
+      font-family: 'DIN';
+      font-size: 1.0417vw;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      cursor: pointer;
+    }
+  }
+
+  .intle {
+    cursor: pointer;
+  }
+  .Premium {
+    cursor: pointer;
+    margin: 0 1.3889vw;
+    display: flex;
+    padding: 0.3472vw 1.3889vw 0.4167vw 1.3889vw;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0.4167vw;
+    background: var(--Color_002, #a54136);
+
+    span {
+      color: var(--Color_003, #fcecd2);
+      text-align: center;
+      font-family: 'DIN';
+      font-size: 1.0417vw;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      text-transform: uppercase;
+      a {
+        text-align: center;
+      }
+    }
+  }
+  .headCont {
+    --headPic: 2.7778vw;
+    --bgc: #f5e5ca;
+    position: relative;
+
+    .headPortrait {
+      position: relative;
+      cursor: pointer;
+      width: var(--headPic);
+      height: var(--headPic);
+      border-radius: var(--headPic);
+      border: 0.0486vw solid var(--Color_002, #a54136);
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: var(--headPic);
+        height: var(--headPic);
+        border-radius: var(--headPic);
+      }
+    }
+    .menu::before {
+      content: '';
+      z-index: calc(var(--index) * 2);
+      border-top: var(--border);
+      border-left: var(--border);
+      width: var(--triangle);
+      height: var(--triangle);
+      background-color: var(--bgc);
+      position: absolute;
+      right: calc(var(--headPic) / 2 - var(--triangle) / 2);
+      top: calc(var(--right) - var(--triangle) / 2);
+      z-index: 10;
+      rotate: 45deg;
+    }
+    .menu {
+      --triangle: 0.6944vw;
+      --right: 0vw;
+      --topTrans: 0.6944vw;
+      --height: 10.77vw;
+      --border: 0.0694vw solid #a54136;
+      --index: -1;
+      --display: none;
+
+      z-index: var(--index);
+      position: absolute;
+      right: var(--right);
+      transform: translateY(var(--topTrans));
+      display: var(--display);
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: start;
+      width: 13.1944vw;
+      height: var(--height);
+      flex-shrink: 0;
+      fill: #f5e5ca;
+      stroke-width: 0.0347vw;
+      stroke: var(--Color_002, #a54136);
+      padding: 0.6944vw 0vw 0.6944vw 1vw;
+      // padding-left: 1.3889vw;
+      background-color: var(--bgc);
+      border: var(--border);
+      border-radius: 0.4167vw;
+
+      li {
+        padding: 0.3472vw;
+
+        list-style: none;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        // width: 100%;
+        img {
+          width: 1.25vw;
+
+          height: 1.3194vw;
+        }
+        span {
+          margin-left: 0.9028vw;
+          color: var(--Color_002, #a54136);
+          font-family: 'DIN';
+          font-size: 0.9722vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 1.3333vw; /* 137.143% */
+          text-align: center;
+        }
+      }
+    }
+  }
+}

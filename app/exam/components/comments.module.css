@@ -1,0 +1,275 @@
+.commentBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 52.9861vw;
+  box-sizing: border-box;
+  padding: 1.9444vw 2.3611vw 2.4306vw;
+  font-family: Arial, sans-serif;
+  background-color: rgba(111, 97, 76, 0.1);
+  border-radius: 0.8333vw;
+}
+.commentTit {
+  font-family: 'DIN';
+  font-size: 1.6667vw;
+  font-weight: 400;
+  line-height: 2.0139vw;
+  letter-spacing: 0em;
+  text-align: left;
+  height: 2.0139vw;
+  color: rgba(111, 97, 76, 1);
+}
+.commentContainer {
+  flex-grow: 1;
+  margin-bottom: 1.1111vw;
+  max-height: 41.6667vw;
+  overflow-y: auto;
+}
+.commentContainer::-webkit-scrollbar {
+  width: 0.2778vw; /* 设置滚动条宽度 */
+  
+}
+
+.commentContainer::-webkit-scrollbar-thumb {
+  background: rgba(111, 97, 76, 1); /* 设置滚动条轨道背景色 */
+}
+
+.commentContainer::-webkit-scrollbar-track {
+  background: rgba(252, 236, 210, 1); /* 设置滚动条滑块颜色 */
+}
+
+.commentContainer::-webkit-scrollbar-thumb:hover {
+   width: 0.2778vw;
+}
+.inputContainer {
+  width: 100%;
+  height: 8.4028vw;
+  display: flex;
+  flex-direction: column;
+}
+/* .pageCounter {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 1.4583vw;
+  height: 1.9444vw;
+} */
+.commentInputContainer {
+  display: flex;
+  width: 100%;
+  margin-top: 5.4833vw;
+  height: 2.7778vw;
+  position: relative;
+  box-sizing: border-box;
+}
+.input {
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  padding: 0.5556vw;
+  border: none;
+  border-radius: 0.5556vw;
+  border: 0.0694vw solid rgba(208, 191, 163, 1);
+  font-family: 'DIN';
+  font-size: 0.9722vw;
+  font-weight: 500;
+  line-height: 0.9722vw;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--Color_004, rgb(111, 97, 76));
+}
+.input::placeholder {
+  color:rgb(173, 160, 138);
+  font-weight: 500;
+}
+.sendBtn {
+  position: absolute;
+  right: 0.1389vw;
+  top: 0.1389vw;
+  width: 8.1944vw;
+  height: 2.5vw;
+  border-radius: 0.4167vw;
+  background-color: transparent;
+  background-color: rgba(165, 65, 54, 1);
+  color: rgba(252, 236, 210, 1);
+  font-family: 'DIN';
+  font-size: 0.8333vw;
+  font-weight: 500;
+  line-height: 1.3194vw;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 0.5556vw 0.8333vw;
+  border: none;
+  border-radius: 0.4167vw;
+}
+.commentAuthor {
+  width: 3.4722vw;
+  height: 3.4722vw;
+  border-radius: 50%; 
+  overflow: hidden;
+}
+.commentImage{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.cText {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 0.9722vw;
+}
+.rText {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 0.9722vw;
+}
+.commentText {
+  margin-bottom: 1.1806vw;
+  height: 1.3194vw;
+  font-family: 'DIN';
+  font-size: 1.1111vw;
+  font-weight: 300;
+  line-height: 1.3194vw;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.comDate {
+  height: 1.3194vw;
+  font-family: 'DIN';
+  font-size: 1.1111vw;
+  font-weight: 500;
+  line-height: 1.3194vw;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+}
+.comment {
+  height: 3.8194vw;
+  display: flex;
+}
+.replyAuthor {
+  width: 3.4722vw;
+  height: 3.4722vw;
+  border-radius: 50%; 
+  overflow: hidden;
+}
+.replyImage{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.reply{
+  height: 2.8472vw;
+  display: flex;
+}
+.commentList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.replyList {
+  height: 4.8611vw;
+  list-style: none;
+  padding-left: 1.1806vw;
+  padding-top: 1.0417vw;
+  margin-left: 1.1111vw;
+  background-color: rgba(111, 97, 76, 0.1);
+  border-radius: 0.4167vw;
+  box-sizing: border-box;
+  margin-top: 0.6944vw;
+  margin-bottom: 1.5278vw;
+}
+.replyText {
+  margin-bottom: 0.3472vw;
+  height: 1.3194vw;
+  font-family: 'DIN';
+  font-size: 1.1111vw;
+  font-weight: 300;
+  line-height: 1.3194vw;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+.replyDate {
+  width: 100%;
+  height: 2.0139vw;
+  font-family: 'DIN';
+  font-size: 1.1111vw;
+  font-weight: 500;
+  line-height: 1.3194vw;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+.like1Icon {
+  margin-left: 19.4444vw;
+  margin-right: 2.2917vw;
+}
+
+.commentItem {
+  margin-top: 2.2917vw;
+  position: relative;
+  margin-bottom: 1.1111vw;
+}
+
+.commentMeta {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.8333vw;
+  margin-top: -0.3472vw;
+}
+.replyMeta {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -1.7361vw;
+  margin-right: 1.3889vw;
+}
+
+.comm {
+  color: rgba(165, 65, 54, 1);
+  height: 1.3194vw;
+  font-family: 'DIN';
+  font-size: 1.1111vw;
+  font-weight: 500;
+  line-height: 1.3194vw;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 1.0417vw;
+}
+.likeIcon {
+  margin-right: 2.0833vw;
+}
+
+.replyInputContainer {
+  display: flex;
+  margin-top: 1.1111vw;
+}
+
+.replyInputContainer input {
+  width: 100%;
+  padding: 0.5556vw;
+  border: none;
+  border-radius: 0.2778vw;
+  background-color: transparent;
+  border: 0.0347vw solid rgba(111, 97, 76, 1);
+}
+
+.replyInputContainer button {
+  margin-left: 0.5556vw;
+  padding: 0.5556vw 0.8333vw;
+  border: none;
+  border-radius: 0.2778vw;
+  background-color: rgba(165, 65, 54, 1);
+  color: rgba(252, 236, 210, 1);
+  cursor: pointer;
+}
+.line {
+  border: 0.0694vw dashed rgba(208, 191, 163, 1);
+}

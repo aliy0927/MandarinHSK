@@ -1,0 +1,142 @@
+.paperdetail2Contain{
+    box-sizing: border-box;
+    width: 100%;
+    height: 145.0278vw;
+    background-color: var(--Color_003, #fcecd2);
+    display: flex;
+    flex-direction: column;
+    padding-top: 9.7222vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.mainContent{
+    width: 77.8%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.intro{
+    width: 100%;
+    height: 3.3333vw;
+    font-family: 'DIN';
+    font-size: 2.7778vw;
+    font-weight: 500;
+    line-height: 3.3333vw;
+    color: rgba(111, 97, 76, 1);
+    text-align: left;
+}
+.subIntro{
+    margin-top: 0.6944vw;
+     width: 100%;
+     height: 1.1111vw;
+     font-family: 'DIN';
+     font-weight: 300;
+     font-size: 0.9028vw;
+     line-height: 1.1111vw;
+     text-align: left;   
+     color: rgba(111, 97, 76, 1);
+}
+
+.testGap{
+    width: 100%;
+    height: 1.7361vw;
+    display: block;
+}
+.testContent{
+    width: 100%;
+    display: flex;
+}
+
+.left{
+    flex:1;
+    margin-right: 1.7361vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.right{
+    flex:2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5278vw;
+}
+.correctRate{
+    margin-top: 1.5278vw;
+    width: 100%;
+    height: 13.8889vw;
+    background-color: rgba(111, 97, 76, 0.1);
+    border-radius: 0.4167vw;
+}
+.correctContent{
+    padding: 2.0833vw 2.2917vw;
+    box-sizing: border-box;
+    display: flex;
+    gap: 2.2917vw;
+    flex-direction: column;
+}
+.correctR{
+    display: flex; 
+    flex:1;
+    width: 100%;
+}
+.correctText{
+    flex:3.5;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 0.3472vw;
+    box-sizing: border-box;
+}
+.top{
+    height: 20px;
+    font-family: 'DIN';
+    font-size: 1.25vw;
+    font-weight: 700;
+    line-height: 1.3194vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(165, 65, 54, 1);
+}
+.bottom{
+    height: 1.3889vw;
+    font-family: 'DIN';
+    font-size: 0.8333vw;
+    font-weight: 500;
+    line-height: 1.3194vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(111, 97, 76, 1);
+
+}
+.chart3{
+    flex:1;
+    height: 4.5139vw;
+    width: 4.5139vw;
+}
+.timeC{
+    display: flex;
+    flex:1;
+    width: 100%;
+}
+.chart4{
+    flex:1;
+    height: 4.5139vw;
+    width: 4.5139vw;
+}
+.colorBox{
+    background: linear-gradient(to bottom, rgba(252, 236, 210, 1), rgba(252, 236, 210, 0));
+    width: 100%;
+    height: 50px;
+    display: block;
+    position: absolute;
+    /* top: 145.0278vw; */
+    left: 0;
+    z-index: 1;
+  }
+  

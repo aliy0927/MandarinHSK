@@ -1,0 +1,602 @@
+.mask {
+  position: fixed;
+  z-index: 99999999;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(45, 40, 31, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aichatContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 79.8611vw;
+  height: 48.6111vw;
+} 
+.mainContent {
+  border-radius: 0.6944vw;
+  overflow: hidden;
+  flex: 20;
+  height: 100%;
+  background: #fcecd2;
+  display: flex;
+}
+.left {
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+.history {
+  padding: 1.5972vw 0.6944vw 1.5972vw 1.8056vw;
+  height: 38.1944vw;
+  background-color: rgba(235, 219, 194, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: left;
+}
+.titleHis {
+  height: 2.5694vw;
+  font-family: 'DIN';
+  font-size: 2.2222vw;
+  font-weight: 700;
+  line-height: 2.5694vw;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(165, 65, 54, 1);
+  margin-bottom: 0.3472vw;
+}
+.historyContainer {
+  flex-grow: 1;
+  max-height: 32.4306vw;
+  overflow-y: auto;
+}
+.historyContainer::-webkit-scrollbar {
+  width: 0.2778vw; /* 设置滚动条宽度 */
+  
+}
+
+.historyContainer::-webkit-scrollbar-thumb {
+  background: rgba(111, 97, 76, 1); /* 设置滚动条轨道背景色 */
+}
+
+.historyContainer::-webkit-scrollbar-track {
+  background: rgba(252, 236, 210, 1); /* 设置滚动条滑块颜色 */
+}
+
+.historyContainer::-webkit-scrollbar-thumb:hover {
+   width: 0.2778vw;
+}
+.left .historyList {
+  padding: 0;
+  list-style: none;
+}
+.historyItem {
+  /* margin-top: 0.6944vw; */
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  margin-bottom: 0.6944vw;
+  
+  /* margin-bottom: 1.3889vw; */
+}
+.date {
+  margin-top: 0.6944vw;
+  height: 1.25vw;
+  font-family: 'DIN';
+  font-size: 1.0417vw;
+  font-weight: 300;
+  line-height: 1.25vw;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(111, 97, 76, 0.6);
+}
+.questions {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+}
+.questions .questionImage{
+  margin-right: 0.3472vw;
+}
+.historyItem .text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 85%;
+  font-family: 'DIN';
+  font-size: 0.9722vw;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(111, 97, 76, 1);
+}
+.upgrade {
+  box-sizing: border-box;
+  height: 10.4167vw;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5278vw 1.8056vw;
+  background-color: rgba(223, 208, 183, 1);
+}
+.vip {
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 100%;
+  height: 2.6389vw;
+  border-radius: 0.4167vw;
+  background-color: rgba(165, 65, 54, 1);
+  transition: background-color 0.3s ease-out;
+}
+.vip .vipImage{
+  margin-right: 0.3472vw;
+  margin-bottom: 0.1389vw;
+}
+.vip:hover{
+  background-color: #8e3829;
+}
+.email {
+  margin-top: 1.5972vw;
+  height: 1.3889vw;
+  font-family: 'DIN';
+  font-size: 1.1111vw;
+  font-weight: 700;
+  line-height: 1.3889vw;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(165, 65, 54, 1);
+}
+.token {
+  margin-top: 0.2083vw;
+  height: 1.1806vw;
+  font-family: 'DIN';
+  font-size: 0.9722vw;
+  font-weight: 300;
+  line-height: 1.1806vw;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(111, 97, 76, 1);
+}
+.upgrade span {
+  height: 1.25vw;
+  font-family: 'DIN';
+  font-size: 1.0417vw;
+  font-weight: 300;
+  line-height: 1.25vw;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(252, 236, 210, 1);
+}
+.right {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  padding: 3.4722vw 2.7778vw 2.0833vw 2.7778vw;
+  position: relative;
+  box-sizing: border-box;
+}
+.cancelIcon {
+  position: absolute;
+  top: 1.0417vw;
+  right: 1.0417vw;
+}
+.chatContainer {
+  flex-grow: 1;
+  max-height: 31.6667vw;
+  overflow-y: auto;
+}
+.chatContainer::-webkit-scrollbar {
+  width: 0.2778vw; /* 设置滚动条宽度 */
+  
+}
+
+.chatContainer::-webkit-scrollbar-thumb {
+  background: rgba(111, 97, 76, 1); /* 设置滚动条轨道背景色 */
+}
+
+.chatContainer::-webkit-scrollbar-track {
+  background: rgba(252, 236, 210, 1); /* 设置滚动条滑块颜色 */
+}
+
+.chatContainer::-webkit-scrollbar-thumb:hover {
+   width: 0.2778vw;
+}
+.chatList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.chatItem {
+  display: flex;
+  flex-direction: column;
+}
+.gtpItem{
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  position: relative;
+  /* gap: 0.9028vw; */
+  margin-bottom: 1.3889vw;
+}
+.userItem{
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  position: relative;
+  gap: 0.9028vw;
+  margin-bottom: 1.3889vw;
+}
+.defaultItem{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  position: relative;
+  margin-bottom: 1.3889vw;
+}
+.defaultItem .subTit{
+  font-family: 'DIN';
+  font-size: 0.9722vw;
+  font-weight: 300;
+  line-height: 1.1806vw;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(111, 97, 76, 0.5);
+  margin-bottom: 0.4861vw;
+}
+.defaultItem .subText{
+  word-break: normal;
+  /* overflow-wrap: normal; */
+  overflow-wrap: break-word;
+  padding: 1.0417vw 1.1111vw 1.0417vw 1.1111vw;
+  background-color: rgba(111, 97, 76, 0.2);
+  border-radius: 0.4167vw;
+  font-family: 'DIN';
+  font-size: 1.1111vw;
+  font-weight: 300;
+  line-height: 1.3194vw;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: rgba(111, 97, 76, 1);
+  max-width: 20.2222vw;
+  min-height: 2.7778vw;
+}
+.fiveFunctions{
+  position: absolute;
+  bottom: 1.0417vw;
+  left: 1.1111vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5556vw;
+  transition: transform 0.3s ease-out;
+  
+}
+.fiveFunctions .row1{
+  display: flex;
+  gap: 0.5556vw;
+}
+.fiveFunctions .sameStyle{
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 2.0139vw;
+  border-radius: 0.2778vw;
+  background-color: rgba(165, 65, 54, 1);
+  transition: background-color 0.3s ease-out;
+}
+.sameStyle .vipImage{
+  margin-right: 0.3472vw;
+  margin-bottom: 0.1389vw;
+}
+.sameStyle:hover{
+  background-color: #8e3829;
+}
+.fiveFunctions span {
+  height: 1.25vw;
+  font-family: 'DIN';
+  font-size: 0.8333vw;
+  font-weight: 300;
+  line-height: 1.25vw;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(252, 236, 210, 1);
+}
+.fiveFunctions .translate{
+  width: 6.2vw;
+}
+.fiveFunctions .speak{
+  width: 5vw;
+}
+.fiveFunctions .copy{
+  width: 4.5vw;
+}
+.fiveFunctions .row2{
+  display: flex;
+  gap: 0.5556vw;
+}
+.fiveFunctions .trumbsUp{
+  width: 6.9vw;
+}
+.fiveFunctions .feedback{
+  width: 6vw;
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideOutToBottom {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+.animatedContent {
+  animation: slideInFromBottom 0.2s ease-out;
+}
+.imAnimatedContent{
+  animation: slideOutToBottom 20s ease-out;
+  opacity: 0; /* 配合动画，使元素逐渐消失 */
+  transform: translateY(100%);
+}
+.userAuthor {
+  width: 3.4722vw;
+  height: 3.4722vw;
+  border-radius: 50%; 
+  overflow: hidden;
+}
+.authorImage{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.userText {
+  word-break: normal;
+  /* overflow-wrap: normal; */
+  overflow-wrap: break-word;
+  padding: 1.0417vw 1.1111vw 1.0417vw 1.1111vw;
+  background-color: rgba(111, 97, 76, 0.1);
+  border-radius: 0.4167vw;
+  font-family: 'DIN';
+  font-size: 1.1111vw;
+  font-weight: 300;
+  line-height: 1.3194vw;
+  letter-spacing: -0.02em;
+  text-align: right;
+  color: rgba(111, 97, 76, 1);
+  max-width: 17.2222vw;
+  min-height: 2.7778vw;
+}
+
+.gtpText {
+  
+  word-break: normal;
+  /* overflow-wrap: normal; */
+  overflow-wrap: break-word;
+  padding: 1.0417vw 1.1111vw 1.0417vw 1.1111vw;
+  background-color: rgba(111, 97, 76, 0.1);
+  border-radius: 0.4167vw;
+  font-family: 'DIN';
+  font-size: 1.1111vw;
+  font-weight: 300;
+  line-height: 1.3194vw;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: rgba(111, 97, 76, 1);
+  max-width: 17.2222vw;
+  min-height: 2.7778vw;
+}
+
+.gtpAvatar {
+  width: 3.4722vw;
+  height: 3.4722vw;
+  border-radius: 50%;
+  overflow: hidden; 
+}
+
+.gtpAvatarImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  
+}
+
+.inputContainer {
+  width: 100%;
+  height: 11.3889vw;
+  display: flex;
+  flex-direction: column;
+}
+.inputOptions {
+  height: 6.5278vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9722vw;
+}
+.inputContainer .row1 {
+  flex: 1;
+  display: flex;
+  gap: 1.3889vw;
+}
+.inputContainer .row2 {
+  flex: 1;
+  display: flex;
+  gap: 1.3889vw;
+}
+.inputContainer button {
+  border: 0.0347vw solid rgba(111, 97, 76, 0.6);
+  flex: 1;
+  border-radius: 0.5556vw;
+  background-color: transparent;
+  font-family: 'DIN';
+  font-size: 0.9722vw;
+  font-weight: lighter;
+  line-height: 0.9722vw;
+  letter-spacing: 0vw;
+  padding-left: 1.0417vw;
+  text-align: left;
+  color: rgba(111, 97, 76, 0.7);
+  transition: all 0.3s ease-out;
+}
+.inputContainer button:hover{
+  background-color: rgba(111, 97, 76, 0.6);
+  color: rgba(252, 236, 210, 0.6);
+}
+.inpt {
+  height: 3.8889vw;
+  width: 100%;
+  position: relative;
+}
+.input {
+  outline: none;
+  border: none;
+  margin-top: 0.9722vw;
+  padding-left: 1.0417vw;
+  padding-right: 4.1667vw;
+  height: 3.8889vw;
+  width: 100%;
+  border-radius: 0.5556vw;
+  background-color: rgba(111, 97, 76, 0.6);
+  font-family: 'DIN';
+  font-size: 1.1111vw;
+  font-weight: 500;
+  line-height: 0.9722vw;
+  letter-spacing: 0vw;
+  text-align: left;
+  color: rgba(252, 236, 210, 0.6);
+}
+.input::placeholder {
+  color: rgba(252, 236, 210, 0.6);
+}
+.sendBtn {
+  cursor: pointer;
+  position: absolute;
+  border: none;
+  top: 2.4306vw;
+  right: 1.0417vw;
+  height: 1.1417vw;
+  font-family: 'DIN';
+  font-size: 1.1111vw;
+  font-weight: 500;
+  line-height: 0.9722vw;
+  letter-spacing: 0vw;
+  color: rgba(252, 236, 210, 1);
+  border-bottom: 0.1389vw solid rgba(252, 236, 210, 1);
+}
+.sideNav {
+  flex: 3;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  margin-left: 0.9028vw;
+}
+.top3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6944vw;
+}
+.bott2 {
+  /* margin-top: 2.9167vw; */
+  margin-top: 0.6944vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6944vw;
+}
+.sideNav button {
+  list-style: none;
+  height: 2.4306vw;
+  border-radius: 0.4167vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.sideNav button .newchatImage{
+  margin-right: 0.3472vw;
+}
+.sideNav button .text {
+  /* height: 1.3889vw; */
+  font-family: 'DIN';
+  font-size: 0.8333vw;
+  font-weight: 500;
+  /* line-height: 0.4306vw; */
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(252, 236, 210, 1);
+}
+.newChat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: rgba(252, 236, 210, 0.2);
+  width: 8.1944vw;
+}
+.sideNav button .historyImage{
+  margin-right: 0.3472vw;
+}
+.viewHistory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: rgba(252, 236, 210, 0.2);
+  width: 9.2361vw;
+}
+.sideNav button .settingImage{
+  margin-right: 0.3472vw;
+}
+.setting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: rgba(252, 236, 210, 0.2);
+  width: 7.2917vw;
+}
+
+.gtpPrice {
+  font-family: 'DIN';
+  font-size: 0.8333vw;
+  font-weight: 500;
+  line-height: 2.1528vw;
+  letter-spacing: 0em;
+  width: 7.5vw;
+  background-color: transparent;
+  border: 0.5px solid rgba(252, 236, 210, 1);
+  color: rgba(252, 236, 210, 1);
+}
+.tokenBalance {
+  font-family: 'DIN';
+  font-size: 0.8333vw;
+  font-weight: 500;
+  line-height: 2.1528vw;
+  letter-spacing: 0em;
+  color: rgba(252, 236, 210, 1);
+  background-color: transparent;
+  width: 8.5417vw;
+  border: 0.5px solid rgba(252, 236, 210, 1);
+}

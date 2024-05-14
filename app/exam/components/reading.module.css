@@ -1,0 +1,134 @@
+.testContent{
+    box-sizing: border-box;
+    width: 100%;
+    height: 36.7083vw;
+    background-color:rgba(111, 97, 76, 0.14);
+    border-radius: 0.8333vw;
+    padding: 2.0833vw 3.4722vw;
+}
+.testContent button{
+    cursor: pointer;
+}
+.testTit{
+    display: flex;
+    position: relative;
+    justify-content: left;
+    align-items: center;
+}
+.testContent .title{
+    /* height: 2.0139vw; */
+    font-family: 'DIN';
+    font-size: 1.6667vw;
+    font-weight: 600;
+    line-height: 2.0139vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(111, 97, 76, 1);
+    
+}
+.questionImage{
+     margin-top: 0.3472vw;
+     margin-left: 1.0417vw;
+}
+/* .questionIcon svg{
+    margin-top: 0.3072vw;
+    margin-left: 1.0417vw;
+} */
+ .pagesIndex{
+    width: 2.9861vw;
+    height: 2.0139vw;
+    font-family: 'DIN';
+    font-size: 1.6667vw;
+    font-weight: 600;
+    line-height: 2.0139vw;
+    letter-spacing: 0em;
+    color: rgba(111, 97, 76, 1);
+    margin-left: auto;
+ }
+ .pagesIndex span{
+   
+    color:rgba(98, 39, 33, 1);
+
+ }
+.testContent .testMaterial{
+    overflow: hidden;
+    /* max-height: 21.5278vw; */
+    max-height: 20.8333vw;
+    margin-top: 1.7222vw;
+    margin-bottom: 1.7778vw;
+    width: 100%;
+    font-family: 'DIN';
+    font-size: 1.25vw;
+    font-weight: 200;
+    line-height: 2.0833vw;
+    letter-spacing: 0em;
+    text-align: justified;
+    color: rgba(111, 97, 76, 0.8);
+}
+.testContent .line1{
+    width: 100%;
+    border: 0.0694vw dashed rgba(208, 191, 163, 1)
+}
+.testOptions{ 
+    margin-top: 2.4306vw;
+    width: 100%;
+    height: 7.6389vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.875vw;
+}
+.row{
+    width: 100%;
+    height: 2.8472vw;
+    display: flex;
+    gap: 1.5278vw;
+}
+.option{
+    padding-left: 1.0417vw;
+    flex:1;
+    border-radius: 0.2917vw;
+    background-color: rgba(111, 97, 76, 0.1);
+    border: none;
+    font-family: 'DIN';
+    font-size: 1.1806vw;
+    font-weight: 500;
+    line-height: 1.3889vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(111, 97, 76, 1);
+}
+.row .optNum{
+    font-weight: 300;
+}
+.solution{
+    box-sizing: border-box;
+    width: 100%;
+    height: 28.3333vw;
+    margin-top: 1.5278vw;
+    border-radius: 0.8333vw;
+    background-color: rgba(111, 97, 76, 0.1);
+    padding: 2.0139vw 1.9444vw;
+}
+.solTit{
+    height: 2.0139vw;
+    font-family: 'DIN';
+    font-size: 1.6667vw;
+    font-weight: 700;
+    line-height: 2.0139vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(111, 97, 76, 1);
+
+}
+.solInput{
+    border-radius: 0.2778vw;
+    border: none;
+    margin-top: 0.7639vw;
+    margin-bottom: 1.3889vw;
+    width: 100%;
+    height: 8.75vw;
+    background-color: rgba(220, 205, 179, 1);
+}
+.solInput:focus {
+    outline: none;
+  }
