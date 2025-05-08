@@ -15,3 +15,6 @@
 5. paperdetail2 '/exam/paperdetail2/[id]'
 6. paperdetail3 '/exam/paperdetail3/[id]'
    注：gpt 页已修改为组件
+   
+##启动命令
+npm run dev
